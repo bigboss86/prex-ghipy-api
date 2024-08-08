@@ -22,7 +22,7 @@ class SecurityController extends Controller
             $token = $user->createToken('AccessToken')->accessToken;
             return response()->json(['token' => $token]);
         } else {
-            return response()->json(['error' => 'Unauthorized'], 401);
+            return response()->json(['message' => 'Incorrect credentials'], 401);
         }
     }
 }
