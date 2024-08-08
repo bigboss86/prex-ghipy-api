@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\GifController;
+use App\Http\Controllers\SecurityController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('/login', [SecurityController::class, 'login']);
+
+Route::prefix('gifs')->group(function () {
+    Route::middleware('auth:api')->get('/search', [GifController::class, 'search']);
+    Route::middleware('auth:api')->get('/{id}', [GifController::class, 'find'])->whereNumber('id');
+    Route::middleware('auth:api')->post('/{id}/save', [GifController::class, 'save'])->whereNumber('id');
 });
