@@ -3,7 +3,6 @@
 use App\Http\Controllers\GifController;
 use App\Http\Controllers\SecurityController;
 use App\Http\Middleware\LogService;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
