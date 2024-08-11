@@ -25,6 +25,7 @@ Features:
 
 <img src="https://github.com/bigboss86/prex-ghipy-api/blob/master/diagram_use_cases.png" alt="Diagram use cases" width="650">
 <img src="https://github.com/bigboss86/prex-ghipy-api/blob/master/diagram_sequence.png" alt="Diagram sequence" width="650">
+<img src="https://github.com/bigboss86/prex-ghipy-api/blob/master/diagram_entity_relationship.png" alt="Diagram entity relationship" width="650">
 
 ## Credits
 

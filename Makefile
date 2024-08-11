@@ -15,7 +15,7 @@ down:
 .PHONY: up
 up:
 	$(SAIL) up -d --remove-orphans
-	sleep 10
+	sleep 60
 
 .PHONY: composer
 composer:
@@ -30,6 +30,13 @@ composer:
 install:
 	$(SAIL) artisan key:generate
 	$(SAIL) artisan passport:keys
+	$(SAIL) artisan migrate
+	$(SAIL) artisan passport:client --personal --no-interaction
+	$(SAIL) artisan db:seed
+
+.PHONY: load-fixtures
+load-fixtures:
+	$(SAIL) artisan migrate:reset
 	$(SAIL) artisan migrate
 	$(SAIL) artisan passport:client --personal --no-interaction
 	$(SAIL) artisan db:seed
