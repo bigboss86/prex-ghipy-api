@@ -44,7 +44,7 @@ class GifController extends Controller
         try {
             $gif = $this->ghipy->findGif($id);
 
-            if (empty($gif)) {
+            if (empty($gif['data'])) {
                 return response()->json(['message' => 'Gif not found'], 404);
             }
 
@@ -67,7 +67,7 @@ class GifController extends Controller
         try {
             $gif = $this->ghipy->findGif($id);
 
-            if (empty($gif)) {
+            if (empty($gif['data'])) {
                 return response()->json(['message' => 'Gif not found'], 404);
             }
 

@@ -26,7 +26,7 @@ class Ghipy
             'offset' => $offset,
         ]);
 
-        return $response->json()['data'] ?? [];
+        return $response->json();
     }
 
     public function findGif(string $id): array
@@ -37,6 +37,6 @@ class Ghipy
             'api_key' => $this->apiKey,
         ]);
 
-        return $response->json()['data'] ?? [];
+        return $response->json();
     }
 }
