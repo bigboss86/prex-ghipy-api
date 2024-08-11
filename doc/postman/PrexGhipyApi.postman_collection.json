@@ -1,7 +1,8 @@
 {
 	"info": {
-		"_postman_id": "affbfcce-8c07-4f90-b3c6-11bdf1dbb503",
+		"_postman_id": "93e96429-2621-4983-b79a-5e684ca44538",
 		"name": "PrexGhipyApi",
+		"description": "The PrexGhipy REST API provides endpoints for search, find and save favorite GIFS.\n\n# GETTING STARTED\n\nTo start sending requests make sure that you have PREXGHIPYAPI environment selected\n\n## SERVICES\n\nLOGIN (/api/login) Retrieve bearer token to authenticate  \nSEARCH GIF (/api/gifs/search) Search GIFS with query parameter  \nFIND GIF (/api/gifs/:id) Get GIF with id parameter  \nSAVE GIF (/api/gifs/:id/save) Save favorite GIF with id parameter for a given user",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "5132939"
 	},
