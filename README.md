@@ -29,4 +29,4 @@ Features:
 
 ## Credits
 
-This project is maintained by <a href="www.linkedin.com/in/damian-d-amico-0751b53b">Damian Damico</a>. Want me to help you with this project? Contact us on <a href="mailto:damian.damico86@gmail.com">damian.damico86@gmail.com</a>.
+This project is maintained by <a href="www.linkedin.com/in/damian-d-amico-0751b53b">Damian Damico</a>. Want me to help you with this project? Contact me on <a href="mailto:damian.damico86@gmail.com">damian.damico86@gmail.com</a>.
